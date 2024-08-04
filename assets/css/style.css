@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lato:ital,wght@0,300;1,300&display=swap');
+
+:root {
+    /*colors*/
+    --clr-main: #12372A;
+    --clr-secondary: #436850;
+    --clr-highlight: #ADBC9F;
+    --clr-light: #FBFADA;
+    /*text*/
+    --font-main: 'Lato', sans serif;
+    --font-titles: 'DM', sans serif;
+    /*hero-sizes*/
+    --hero-large: 5rem;
+    --hero-medium: 4.5rem;
+    --hero-small: 4rem;
+    /*hero-body-sizes*/
+    --hero-body-large: 1.5rem;
+    --hero-body-medium: 1.25rem;
+    --hero-body-small: 1rem;
+    /*button-text*/
+    --button-large: 1.125rem;
+    --button-medium: 1rem;
+    --button-small: 0.875rem;
+    /*label-text*/
+    --label-large: 0.875rem;
+    --label-medium: 0.75rem;
+    --label-small: 0.625rem;
+    /*button-heights*/
+    --large-button: 36px;
+    --medium-button: 32px;
+    --small-button: 28px;
+    /*border-radius*/
+    --large-btn-border: 18px;
+    --medium-btn-border: 16px;
+    --small-btn-border: 14px;
+    --container-border: 16px;
+}   
+
+* {
+    /*position*/
+    margin: 0;
+    padding: 0;
+
+    /*dimensions*/
+    width: 100%;
+    box-sizing: border-box;
+}
