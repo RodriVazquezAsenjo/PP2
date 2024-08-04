@@ -12,7 +12,7 @@
     /*hero-sizes*/
     --hero-large: 5rem;
     --hero-medium: 4.5rem;
-    --hero-small: 4rem;
+    --hero-small: 3rem;
     /*hero-body-sizes*/
     --hero-body-large: 1.5rem;
     --hero-body-medium: 1.25rem;
@@ -59,18 +59,113 @@ body{
 
 }
 
-nav {
+/* Header Styling */
+header {
     /*position*/
+    position: fixed;
+    padding: 1rem 1rem;
+    z-index: 99;
+  
+    /*dimensions*/
+    width: 100%;
+    max-width: 1800px;
+  
+    /*flex-box*/
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  
+    /*animation*/
+    transition: 0.3s ease-in-out;
+  }
+  
+  .nav-toggle-label {
+    /*position*/
+    position: absolute;
+    top: 20px;
+    right: 32px;
+  
+    /*dimensions*/
+    width: auto;
+  }
+  
+  #menu {
+    /*position*/
+    padding: 1rem;
+  
+    /*flex-box*/
+    display: flex;
+    justify-content: space-evenly;
+   
+    /*text*/
+    list-style-type: none;
+  }
+  
+  #menu > li {
+    /*dimensions*/
+    width: auto;
+  
+    /*flex-box*/
+    display: flex;
+    justify-content: center;
+  
+    /*text*/
+    font-size: 1rem;
+  }
 
-    /*height*/
+  nav {
+    /*position*/
+    position: absolute;
+    left: 0;
+    top: 200%;
+  
+    /*dimensions*/
     height: 0;
-
+  
     /*animation*/
     visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+  }
+  
+  #nav-toggle {
+    /*flex-box*/
+    display: none;
+  }
+  
+  #nav-toggle:checked ~ nav {
+    /*dimensions*/
+    height: auto;
+  
+    /*animation*/
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .nav-toggle-label {
+    /*text*/
+    font-size: var(--hero-small);
+  }
+  
+  #menu li {
+    /*dimensions*/
+    width: 100px;
+    /*box*/
+    background-color: var(--clr-light);
+    border-radius: var(--small-btn-border);
+    /*text*/
+    font-size: var(--hero-body-large);
+  }
 
-}
+  #menu a {
+    /*position*/
+    padding: 5px;
+    /*text*/
+    color: var(--clr-main);
+    text-align: center;
+  }
 
-header {
+#landing-section {
     /*dimensions*/
     height: 100vh;
 
