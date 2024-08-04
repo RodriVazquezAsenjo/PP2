@@ -14,8 +14,8 @@
     --hero-medium: 4.5rem;
     --hero-small: 3rem;
     /*hero-body-sizes*/
-    --hero-body-large: 1.5rem;
-    --hero-body-medium: 1.25rem;
+    --hero-body-large: 2.5rem;
+    --hero-body-medium: 1.75rem;
     --hero-body-small: 1rem;
     /*button-text*/
     --button-text-large: 1.125rem;
@@ -62,7 +62,12 @@ h1{
 
 h2{
   font-family: var(--font-titles);
-  font-size: var(--hero-medium);
+  font-size: var(--hero-small);
+}
+
+h3 {
+  font-family: var(--font-titles);
+  font-size: var(--hero-body-large);
 }
 
 body{
@@ -248,22 +253,69 @@ section {
     color: var(--clr-main);
 }
 
+#issue-section {
+  /*box*/
+  background: linear-gradient(to bottom, var(--clr-main) 75%, var(--clr-light) 95%);
+  height: fit-content;
+  min-height: 100vh;
+}
+
+#issue-statement {
+  /*position*/
+  padding: 50px;
+}
+
+#issue-list {
+  /*position*/
+  padding: 50px;
+  position: relative;
+  /*flex-box*/
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 15px;
+  /*text*/
+  text-align: center;
+}
+.issue {
+  /*position*/
+  margin: 0 auto;
+  /*dimensions*/
+  height: 250px;
+  max-width: 400px;
+  /*box*/
+  border: var(--clr-light) 2px solid;
+  border-radius: var(--container-border);
+  /*text*/
+  line-height: var(--line-height-large);
+}
+
+.issue > p {
+  /*position*/
+  padding: 15px;
+  /*text*/
+  line-height: var(--line-height-small);
+}
+.issue > i {
+  /*position*/
+  padding: 25px;
+  /*text*/
+  font-size: var(--hero-body-large);
+}
+
 .feature {
   /*position*/
   padding: 50px;
   /*flex-box*/
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
-}
-#feature-1 {
   /*box*/
-  background: linear-gradient(to bottom, var(--clr-main) 10%, var(--clr-light) 50%);
+  background:var(--clr-light);
 }
 .feature > div {
-  width: auto;
+  width: 400px;
 }
 .feature-image img{
   /*position*/
@@ -271,10 +323,11 @@ section {
   /*dimensions*/
   height: 75vh;
   width: auto;
-  min-width: 33.3%;
 }
-.feature-description {
-  max-width: 40vw;
+
+.feature-description{
+  /*dimensions*/
+  max-width: 600px;
 }
 .feature-description h2{
   /*text*/
@@ -283,12 +336,9 @@ section {
 }
 .feature-description p{
   /*position*/
-  padding-top: 25px;
+  padding-top: 10px;
   /*text*/
   color: var(--clr-main);
-  line-height: var(--line-height-medium);
+  line-height: var(--line-height-small);
 }
 
-#feature-2 {
-  background-color: var(--clr-light);
-}
