@@ -255,14 +255,14 @@ section {
 
 #issue-section {
   /*box*/
-  background: linear-gradient(to bottom, var(--clr-main) 75%, var(--clr-light) 95%);
+  background: linear-gradient(to bottom, var(--clr-main) 90%, var(--clr-light) 100%);
   height: fit-content;
   min-height: 100vh;
 }
 
 #issue-statement {
   /*position*/
-  padding: 50px;
+  padding: 50px 50px 25px;
 }
 
 #issue-list {
@@ -305,7 +305,7 @@ section {
 
 .feature {
   /*position*/
-  padding: 50px;
+  padding: 10px;
   /*flex-box*/
   display: flex;
   flex-wrap: wrap;
@@ -328,13 +328,15 @@ section {
 }
 
 .feature-description{
+  /*position*/
+  padding: 10px;
   /*dimensions*/
   max-width: 600px;
 }
 .feature-description h2{
   /*text*/
   color: var(--clr-main);
-  line-height: var(--line-height-large);
+  line-height: var(--line-height-medium);
 }
 .feature-description p{
   /*position*/
