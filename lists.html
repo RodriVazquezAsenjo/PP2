@@ -7,35 +7,57 @@
     <link href="assets/css/style.css" rel="stylesheet">
   </head>
   <body id="list-body">
-      <header id="list-header">
-        <div>
+    <header>
+      <!-- Checkbox for toggling the navigation bar-->
+      <input type="checkbox" id="nav-toggle" name="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label">
+      <i class="fa-solid fa-bars"></i>
+      </label>
+      <nav>
+        <ul id="menu">
+          <li>
+            <a href="index.html" class="active" aria-label="visit our home page ">List</a>
+          </li>
+          <li>
+            <a href="lists.html" aria-label="visit our mentor page">Mentors</a>
+          </li>
+          <li>
+            <a href="contact.html" aria-label="visit our contact page">Account</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main id="list-header">
+      <section id="grocery-list">
+        <div id="searchbox">
           <h1>Grocery List</h1>
           <form onsubmit="handleSubmit(event)" id="searchbox-form">
-            <input type="text" id="ingredient">
-            <button type="submit">Add to the list!</button>
+            <input type="text" id="ingredient" class="form-boxes">
+            <button type="submit" class="form-boxes">Add to the list!</button>
           </form>
         </div>
-      </header>
-      <main>
         <div>
-          <table>
+          <table id="grocery-table">
             <thead>
               <tr>
                 <th>Ingredient</th>
                 <th>Category</th>
-                <th>Expriry Date</th>
+                <th>Expiry Date</th>
               </tr>
             </thead>
             <tbody id="ingredient-list">
               <tr>
-                <td class='table-entry'></td>
-                <td class='table-entry'></td>
-                <td class='table-entry'></td>
+                <td></td>
+                <td></td>
+                <td></td>
               </tr>
             </tbody>
           </table>
+
         </div>
-      </main>
+      </section>
+    </main>
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/92ae7cb8c0.js" crossorigin="anonymous"></script>
   </body>
 </html>

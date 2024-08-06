@@ -342,12 +342,92 @@ section {
   line-height: var(--line-height-small);
 }
 
-#list-body {
+#grocery-list {
+  /*position*/
+  text-align: center;
+  padding: 50px;
+  /*dimensions*/
+  min-height: 100vh;
+  /*flex-box*/
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   /*box*/
   background-color: var(--clr-main);
 }
 
 #searchbox-form {
-  padding: 10%;
-  align-items: center;
+  /*position*/
+  margin: 0 auto;
+  padding-top: 25px;
+  /*dimensions*/
+  width: 300px;
+  /*flex-box*/
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.form-boxes {
+  /*dimensions*/
+  height: var(--button-large);
+  /*box*/
+  border: var(--clr-secondary) 3px solid;
+  border-radius: var(--button-large);
+  background-color: var(--clr-light);
+  /*text*/
+  color: var(--clr-main);
+}
+
+#grocery-table {
+  /*position*/
+  margin: 0 auto;
+  padding: 5%;
+  /*dimensions*/
+  max-width: 800px;
+  border-collapse: collapse;
+  /*box*/
+  border: var(--clr-secondary);
+}
+
+
+#grocery-table th,
+#grocery-table td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+#grocery-table thead {
+    background-color: #333;
+    color: #fff;
+}
+
+#grocery-table th {
+    border-bottom: 2px solid #ddd;
+}
+
+#grocery-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#grocery-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+#grocery-table td {
+    border-bottom: 1px solid #ddd;
+}
+/* Optional: Set column widths */
+#grocery-table th:nth-child(1),
+#grocery-table td:nth-child(1) {
+    width: 40%; 
+}
+
+#grocery-table th:nth-child(2),
+#grocery-table td:nth-child(2) {
+    width: 30%; 
+}
+
+#grocery-table th:nth-child(3),
+#grocery-table td:nth-child(3) {
+    width: 30%; 
 }
