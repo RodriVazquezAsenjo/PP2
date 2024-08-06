@@ -4,27 +4,37 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Iterating DOM Elements</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/style.css" rel="stylesheet">
   </head>
-  <body>
-      <header>
-        <form onsubmit="handleSubmit(event)">
-          <input type="text" id="input">
-          <button type="submit">X</button>
-        </form>
+  <body id="list-body">
+      <header id="list-header">
+        <div>
+          <h1>Grocery List</h1>
+          <form onsubmit="handleSubmit(event)" id="searchbox-form">
+            <input type="text" id="ingredient">
+            <button type="submit">Add to the list!</button>
+          </form>
+        </div>
       </header>
       <main>
-        <table>
-          <thead>
-            <tr>
-              <th>Ingredient</th>
-              <th>Category</th>
-              <th>Expriry Date</th>
-            </tr>
-          </thead>
-          <tbody id="ingredient-list">
-          </tbody>
-        </table>
+        <div>
+          <table>
+            <thead>
+              <tr>
+                <th>Ingredient</th>
+                <th>Category</th>
+                <th>Expriry Date</th>
+              </tr>
+            </thead>
+            <tbody id="ingredient-list">
+              <tr>
+                <td class='table-entry'></td>
+                <td class='table-entry'></td>
+                <td class='table-entry'></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </main>
     <script src="script.js"></script>
   </body>

@@ -70,10 +70,6 @@ h3 {
   font-size: var(--hero-body-large);
 }
 
-body{
-
-}
-
 /* Header Styling */
 header {
     /*position*/
@@ -346,38 +342,12 @@ section {
   line-height: var(--line-height-small);
 }
 
-/* Style for the table */
-table {
-  width: 100%;
-  border-collapse: collapse; /* Removes space between borders */
-  margin: 20px 0; /* Adds margin around the table */
+#list-body {
+  /*box*/
+  background-color: var(--clr-main);
 }
 
-/* Style for table headers */
-th {
-  background-color: #f4f4f4; /* Light grey background */
-  color: #333; /* Dark text color */
-  padding: 10px; /* Space inside the cells */
-  text-align: left; /* Align text to the left */
-  border-bottom: 2px solid #ddd; /* Light grey border at the bottom */
-}
-
-/* Style for table data cells */
-td {
-  padding: 10px; /* Space inside the cells */
-  border-bottom: 1px solid #ddd; /* Light grey border at the bottom */
-}
-
-/* Style for alternate row colors */
-tr:nth-child(even) {
-  background-color: #f9f9f9; /* Light grey background for even rows */
-}
-
-tr:nth-child(odd) {
-  background-color: #ffffff; /* White background for odd rows */
-}
-
-/* Style for table borders */
-table, th, td {
-  border: 1px solid #ddd; /* Light grey border */
+#searchbox-form {
+  padding: 10%;
+  align-items: center;
 }
