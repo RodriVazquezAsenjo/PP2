@@ -1,33 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <h1>Add your items here!</h1>
-        <form>
-            <label for="ingredient">Add to the list</label>
-            <input type="text" name="ingredient-searchbox" id="ingredient-searchbox">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Iterating DOM Elements</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+      <header>
+        <form onsubmit="handleSubmit(event)">
+          <input type="text" id="input">
+          <button type="submit">X</button>
         </form>
+      </header>
+      <main>
         <table>
-            <thead>
-                <tr>
-                    <th>Ingredient</th>
-                    <th>Category</th>
-                    <th>Expiry date</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>A</td>
-                    <td>B</td>
-                    <td>C</td>
-                </tr>
-            </tbody>
+          <thead>
+            <tr>
+              <th>Ingredient</th>
+              <th>Category</th>
+              <th>Expriry Date</th>
+            </tr>
+          </thead>
+          <tbody id="ingredient-list">
+          </tbody>
         </table>
-    </header>
-</body>
+      </main>
+    <script src="script.js"></script>
+  </body>
 </html>
